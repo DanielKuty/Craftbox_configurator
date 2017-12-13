@@ -21,7 +21,7 @@ def read(*names, **kwargs):
         encoding=kwargs.get('encoding', 'utf8')
     ).read()
 
-
+install_requires=["CPython", "Kivy"]
 setup(
     name='craftbox-configurator',
     version='0.1.0',
