@@ -21,7 +21,7 @@ def read(*names, **kwargs):
         encoding=kwargs.get('encoding', 'utf8')
     ).read()
 
-install_requires=["CPython", "Kivy"]
+install_requires=["CPython", "Kivy", "Pillow", "pygame", "passlib" ]
 setup(
     name='craftbox-configurator',
     version='0.1.0',
@@ -65,7 +65,7 @@ setup(
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
-    install_requires=[
+    install_requires=[install_requires
         'click',
         # eg: 'aspectlib==1.1.1', 'six>=1.7',
     ],
